@@ -25,15 +25,13 @@ npm run dev
 
 # 5. Open the URL shown in terminal (usually http://localhost:5173/)
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used  
 
-React.js (Vite) – Fast frontend build tool & framework
+- ⚛ **React.js (Vite)** – Fast frontend build tool & framework  
+- 🗂 **Redux Toolkit** – State management for Todos  
+- 🎨 **CSS3** – Styling and layout  
+- ✨ **JavaScript (ES6+)** – Core logic and interactivity  
 
-Redux Toolkit – State management for Todos
-
-CSS3 – Styling and layout
-
-JavaScript (ES6+) – Core logic and interactivity
 
 📂 Folder Structure
 internship-assignent/
@@ -49,21 +47,25 @@ internship-assignent/
 │   ├── main.jsx          # Entry point
 │── package.json          # Project dependencies and scripts
 │── vite.config.js        # Vite configuration
-📸 Screenshots
-🏠 Home Page
 
-✅ Todo App
+## 📸 Screenshots  
 
-👤 GitHub Profile Viewer
-✨ Features
+### 🏠 Home Page  
+![Home Page](public/screenshots/home-page.png)  
 
-✅ Todo App with add/remove functionality (state managed via Redux)
+### ✅ Todo App  
+![Todo App](public/screenshots/todo-page.png)  
 
-✅ GitHub Profile Viewer using API integration
+### 👤 GitHub Profile Viewer  
+![GitHub Profile Viewer](public/screenshots/github-page.png)  
 
-✅ Light/Dark Theme Toggle
+## ✨ Features  
 
-✅ Responsive design with pure CSS
+- ✅ **Todo App** – Add and remove tasks with state managed via Redux  
+- ✅ **GitHub Profile Viewer** – Search and view GitHub users using API integration  
+- ✅ **Light/Dark Theme Toggle** – Switch between light and dark themes  
+- ✅ **Responsive Design** – Fully responsive layout styled with pure CSS  
+
 
 📜 License
 
