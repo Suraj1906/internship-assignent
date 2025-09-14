@@ -34,7 +34,7 @@ a Redux-based store for state management, and custom CSS styling.
 ## ⚙️ Setup Instructions  
 
 Follow these steps to run the project locally:  
-
+```bash
 # 1. Clone the repository
 git clone https://github.com/Suraj1906/internship-assignent.git
 
@@ -48,6 +48,7 @@ npm install
 npm run dev
 
 # 5. Open the URL shown in terminal (usually http://localhost:5173/)
+```
 
 📂 Folder Structure
 internship-assignent/
