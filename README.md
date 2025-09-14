@@ -1,8 +1,33 @@
 # 🚀 Internship Assignment – React Vite Project  
 
-This is a **React + Vite** project built as part of an internship assignment.  
+[![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
+[![Vite](https://img.shields.io/badge/Vite-4.0.0-brightgreen?logo=vite&logoColor=white)](https://vitejs.dev/) 
+[![Redux](https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux&logoColor=white)](https://redux-toolkit.js.org/) 
+[![License](https://img.shields.io/badge/License-Educational-orange)](LICENSE)  
+
+A **React + Vite** project built as part of an internship assignment.  
 It includes multiple pages (**Home**, **Todo App**, **GitHub Profile Viewer**),  
 a Redux-based store for state management, and custom CSS styling.  
+
+---
+
+## 🔗 Table of Contents  
+
+- [🛠️ Technologies Used](#-technologies-used)  
+- [⚙️ Setup Instructions](#-setup-instructions)  
+- [📂 Folder Structure](#-folder-structure)  
+- [📸 Screenshots](#-screenshots)  
+- [✨ Features](#-features)  
+- [📜 License](#-license)  
+
+---
+
+## 🛠️ Technologies Used  
+
+- ⚛ **React.js (Vite)** – Fast frontend build tool & framework  
+- 🗂 **Redux Toolkit** – State management for Todos  
+- 🎨 **CSS3** – Styling and layout  
+- ✨ **JavaScript (ES6+)** – Core logic and interactivity  
 
 ---
 
@@ -23,16 +48,6 @@ npm install
 # 4. Start development server
 npm run dev
 
-# 5. Open the URL shown in terminal (usually http://localhost:5173/)
-
-## 🛠️ Technologies Used  
-
-- ⚛ **React.js (Vite)** – Fast frontend build tool & framework  
-- 🗂 **Redux Toolkit** – State management for Todos  
-- 🎨 **CSS3** – Styling and layout  
-- ✨ **JavaScript (ES6+)** – Core logic and interactivity  
-
-
 📂 Folder Structure
 internship-assignent/
 │── public/               # Static assets (favicon, images, etc.)
@@ -48,25 +63,29 @@ internship-assignent/
 │── package.json          # Project dependencies and scripts
 │── vite.config.js        # Vite configuration
 
-## 📸 Screenshots  
+📸 Screenshots
+🏠 Home Page
 
-### 🏠 Home Page  
-![Home Page](public/screenshots/home-page.png)  
+✅ Todo App
 
-### ✅ Todo App  
-![Todo App](public/screenshots/todo-page.png)  
+👤 GitHub Profile Viewer
 
-### 👤 GitHub Profile Viewer  
-![GitHub Profile Viewer](public/screenshots/github-page.png)  
 
-## ✨ Features  
 
-- ✅ **Todo App** – Add and remove tasks with state managed via Redux  
-- ✅ **GitHub Profile Viewer** – Search and view GitHub users using API integration  
-- ✅ **Light/Dark Theme Toggle** – Switch between light and dark themes  
-- ✅ **Responsive Design** – Fully responsive layout styled with pure CSS  
+✨ Features
 
+✅ Todo App – Add and remove tasks with state managed via Redux
+
+✅ GitHub Profile Viewer – Search and view GitHub users using API integration
+
+✅ Light/Dark Theme Toggle – Switch between light and dark themes
+
+✅ Responsive Design – Fully responsive layout styled with pure CSS
 
 📜 License
 
-This project is for educational and internship purposes.
+This project is created solely for educational and internship purposes.
+It is not intended for commercial use.
+
+
+# 5. Open the URL shown in terminal (usually http://localhost:5173/)
