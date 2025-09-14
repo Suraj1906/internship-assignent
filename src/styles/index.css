@@ -1,0 +1,346 @@
+/* ------------------------------
+   Global & Theme variables
+   ------------------------------ */
+:root {
+  --bg: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ff6a00 100%);
+  --page-pad: 24px;
+  --text: #0b1220;
+  --muted: #6b7280;
+  --card-bg: rgba(255,255,255,0.85);
+  --glass: rgba(255,255,255,0.06);
+  --accent-1: #06b6d4;
+  --accent-2: #7c3aed;
+}
+
+:root[data-theme='dark'] {
+  --bg: linear-gradient(135deg, #0f172a 0%, #071033 100%);
+  --text: #e6eef8;
+  --muted: #94a3b8;
+  --card-bg: rgba(12,18,28,0.6);
+  --glass: rgba(255,255,255,0.03);
+  --accent-1: #06b6d4;
+  --accent-2: #7c3aed;
+}
+
+/* Reset */
+* { box-sizing: border-box; }
+html,body,#root { height: 95%;
+; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  
+}
+
+/* App Shell */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.app-brand { margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.app-main { padding: 28px; display: flex; justify-content:center; align-items:flex-start; }
+
+/* Theme toggle */
+.theme-toggle {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: #041025;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.4);
+}
+
+/* Container & card */
+.container { max-width: 960px; width: 100%; margin: 0 auto; }
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.25);
+}
+
+/* ------------------------------
+   Home / Hero
+   ------------------------------ */
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  padding: 48px 18px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0,0,0,0.12), rgba(0,0,0,0.12));
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+   
+   
+  
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero-content { max-width: 820px; animation: fadeIn 1s ease both; }
+.hero-title { font-size: 2.6rem; margin: 0 0 8px 0; font-weight: 800; text-shadow: 0 6px 24px rgba(0,0,0,0.4); }
+.hero-subtitle { font-size: 1.1rem; margin: 0 0 20px 0; opacity: 0.95; }
+.hero-buttons { display:flex; gap:16px; justify-content:center; }
+.hero-btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg,#ff6a00,#ee0979);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.hero-btn:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 16px 40px rgba(0,0,0,0.45); }
+
+/* ------------------------------
+   To-Do
+   ------------------------------ */
+.todo-page .page-header, .github-page .page-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.link-back { background: transparent; border: none; color: var(--muted); cursor: pointer; font-weight:600; }
+
+.todo-input { display:flex; gap:12px; margin-bottom:12px; align-items:center; }
+.input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.04);
+  color: inherit;
+}
+.btn { padding: 8px 12px; border-radius: 10px; border: none; cursor: pointer; font-weight:700; }
+.btn.primary { background: linear-gradient(90deg,var(--accent-1),var(--accent-2)); color: #041025; box-shadow: 0 10px 30px rgba(2,6,23,0.25); }
+.btn.outline { background: transparent; border: 1px solid rgba(255,255,255,0.06); color: var(--accent-1); }
+.btn.danger { display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+  color: white;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; }
+
+  .btn.danger:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(239, 68, 68, 0.45);
+}
+
+
+.search-row { margin: 12px 0; }
+
+.todo-list { display:flex; flex-direction:column; gap:12px; margin-top:10px; align-items:center; }
+.todo-card {
+  width: 100%;
+  max-width: 640px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+  padding: 16px;
+  border-radius: 12px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+:root[data-theme='dark'] .todo-card { background: rgba(12,18,28,0.6); }
+.todo-card:hover { transform: translateY(-6px); box-shadow: 0 18px 46px rgba(2,6,23,0.2); }
+
+.task-text { margin:0; font-weight:600; }
+
+/* fade animations for cards */
+.fade-in { animation: fadeIn 0.35s ease-out both; }
+.fade-out { animation: fadeOut 0.3s ease-in both; }
+@keyframes fadeIn { from { opacity:0; transform: translateY(8px);} to { opacity:1; transform: translateY(0);} }
+@keyframes fadeOut { from { opacity:1; transform: translateY(0);} to { opacity:0; transform: translateY(-8px);} }
+
+/* ------------------------------
+   GitHub Card
+   ------------------------------ */
+.github-search { display:flex; gap:12px; align-items:center; }
+.github-card {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 40px rgba(2,6,23,0.18);
+  color: inherit;
+  display:flex; gap:16px; align-items:center;
+}
+:root[data-theme='dark'] .github-card { background: rgba(255,255,255,0.04); }
+.github-card .avatar img { width: 110px; height:110px; border-radius: 50%; object-fit:cover; border: 4px solid rgba(255,255,255,0.12); }
+.github-info { flex:1; }
+.github-info h3 { margin:0 0 6px 0; font-size:1.1rem; }
+.bio { margin:0 0 8px 0; color: var(--muted); }
+.meta { color: var(--muted); margin-bottom:8px; }
+
+.github-badges { display:flex; gap:10px; margin-top:8px; flex-wrap:wrap; }
+.github-badge {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  font-weight:700;
+}
+
+/* slide-in for github card */
+.slide-in { animation: slideIn 0.45s ease both; }
+@keyframes slideIn { from { opacity:0; transform: translateY(14px);} to { opacity:1; transform: translateY(0);} }
+
+/* ------------------------------
+   Route transitions
+   ------------------------------ */
+.fade-route-enter { opacity:0; transform: translateY(10px); }
+.fade-route-enter-active { opacity:1; transform: translateY(0); transition: opacity 300ms ease, transform 300ms ease; }
+.fade-route-exit { opacity:1; transform: translateY(0); }
+.fade-route-exit-active { opacity:0; transform: translateY(-10px); transition: opacity 250ms ease, transform 250ms ease; }
+
+/* ------------------------------
+   Utilities / responsive
+   ------------------------------ */
+.muted { color: var(--muted); }
+.error { color: #ff6b6b; font-weight:700; }
+
+@media (max-width: 720px) {
+  .github-card { flex-direction: column; align-items: center; text-align: center; padding:18px; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .todo-card { max-width: 100%; }
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid transparent;
+  border-top: 4px solid var(--accent-1);
+  border-right: 4px solid var(--accent-2);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 4px var(--accent-1), 0 0 6px var(--accent-2); }
+  100% { box-shadow: 0 0 14px var(--accent-1), 0 0 20px var(--accent-2); }
+}
+
+.link-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  
+  /* Theme-aware colors */
+  color: var(--accent-1);
+}
+
+.link-back:hover {
+  background: rgba(0, 0, 0, 0.05); /* Light hover */
+  color: var(--accent-2);
+}
+
+[data-theme="dark"] .link-back:hover {
+  background: rgba(255, 255, 255, 0.08); /* Dark hover */
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  gap: 12px;
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.emoji-icon {
+  font-size: 2.8rem;
+  /* no gradient at all */
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.main-heading { /* for heading- suraj internship project*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: -1rem 0;
+  gap: 12px; /* space between emoji and text */
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* subtle depth */
+  animation: fadeInUp 1s ease-out;
+}
+
+.emoji-icon {
+  font-size: 3.2rem;
+  /* No gradient */
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background: none;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+/* Slide-up fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
