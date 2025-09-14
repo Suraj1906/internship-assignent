@@ -35,7 +35,6 @@ a Redux-based store for state management, and custom CSS styling.
 
 Follow these steps to run the project locally:  
 
-```bash
 # 1. Clone the repository
 git clone https://github.com/Suraj1906/internship-assignent.git
 
@@ -68,13 +67,16 @@ internship-assignent/
 📸 Screenshots
 
 ### 🏠 Home Page
- ![image alt] (https://github.com/Suraj1906/internship-assignent/blob/61ed44189af77125f53162a94d9dff4ec0476879/public/screenshots/home-page.png)
+ <img width="1327" height="629" alt="home-page" src="https://github.com/user-attachments/assets/d366f77f-95f9-4d3e-ad40-d87e2844b6ce" />
+
 
 ### ✅ Todo App
-![Todo App](public/screenshots/todo-page.png)
+<img width="1322" height="639" alt="todo-page" src="https://github.com/user-attachments/assets/2f6385b1-4edd-488b-8ce4-e7689d280c90" />
+
 
 ### 👤 GitHub Profile Viewer
-![GitHub Profile Viewer](public/screenshots/github-page.png)
+<img width="1349" height="636" alt="github-page" src="https://github.com/user-attachments/assets/6af22ea4-b0ef-40c2-b354-98e2b25737a8" />
+
 
 
 
