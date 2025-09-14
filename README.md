@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vite React Internship Project
 
 This is a React + Vite project built for an internship assignment.
@@ -34,3 +35,6 @@ npm run dev
 - If you see an error about missing dependencies, run `npm install` again.
 
 Good luck with your internship submission — make sure to include a short README and a few screenshots in your GitHub repo!
+=======
+# internship-assignent
+>>>>>>> 365e1cdf57755d53bf8f99de136a1c7fb9485a16
