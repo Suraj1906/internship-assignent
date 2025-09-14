@@ -48,6 +48,8 @@ npm install
 # 4. Start development server
 npm run dev
 
+# 5. Open the URL shown in terminal (usually http://localhost:5173/)
+
 📂 Folder Structure
 internship-assignent/
 │── public/               # Static assets (favicon, images, etc.)
@@ -88,4 +90,4 @@ This project is created solely for educational and internship purposes.
 It is not intended for commercial use.
 
 
-# 5. Open the URL shown in terminal (usually http://localhost:5173/)
+
