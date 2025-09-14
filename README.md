@@ -68,7 +68,7 @@ internship-assignent/
 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](https://raw.githubusercontent.com/Suraj1906/internship-assignent/main/public/screenshots/home-page.png)
+ ![image alt] (https://github.com/Suraj1906/internship-assignent/blob/61ed44189af77125f53162a94d9dff4ec0476879/public/screenshots/home-page.png)
 
 ### ✅ Todo App
 ![Todo App](public/screenshots/todo-page.png)
