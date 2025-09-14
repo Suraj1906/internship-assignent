@@ -1,40 +1,97 @@
-<<<<<<< HEAD
-# Vite React Internship Project
+# 🚀 Internship Assignment – React Vite Project  
 
-This is a React + Vite project built for an internship assignment.
-Features:
-- Home landing hero with animated gradient and big CTA buttons
-- To-Do app with Redux Toolkit and localStorage persistence
-- GitHub user search dashboard (uses GitHub Users API)
-- Animations for route transitions, task cards, and GitHub card
-- Dark/Light mode toggle (persists to localStorage)
-- Modern styling, gradients, and glassmorphism
+[![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
+[![Vite](https://img.shields.io/badge/Vite-4.0.0-brightgreen?logo=vite&logoColor=white)](https://vitejs.dev/) 
+[![Redux](https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux&logoColor=white)](https://redux-toolkit.js.org/) 
+[![License](https://img.shields.io/badge/License-Educational-orange)](LICENSE)  
 
-## Setup
+A **React + Vite** project built as part of an internship assignment.  
+It includes multiple pages (**Home**, **Todo App**, **GitHub Profile Viewer**),  
+a Redux-based store for state management, and custom CSS styling.  
 
-1. Extract the ZIP.
-2. Open a terminal inside the project folder.
-3. Install dependencies:
+---
+
+## 🔗 Table of Contents  
+
+- [🛠️ Technologies Used](#-technologies-used)  
+- [⚙️ Setup Instructions](#-setup-instructions)  
+- [📂 Folder Structure](#-folder-structure)  
+- [📸 Screenshots](#-screenshots)  
+- [✨ Features](#-features)  
+- [📜 License](#-license)  
+
+---
+
+## 🛠️ Technologies Used  
+
+- ⚛ **React.js (Vite)** – Fast frontend build tool & framework  
+- 🗂 **Redux Toolkit** – State management for Todos  
+- 🎨 **CSS3** – Styling and layout  
+- ✨ **JavaScript (ES6+)** – Core logic and interactivity  
+
+---
+
+## ⚙️ Setup Instructions  
+
+Follow these steps to run the project locally:  
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/Suraj1906/internship-assignent.git
+
+# 2. Move into the project folder
+cd internship-assignent
+
+# 3. Install dependencies
 npm install
-```
 
-4. Run dev server:
-
-```bash
+# 4. Start development server
 npm run dev
-```
 
-5. Open the URL printed by Vite (usually http://localhost:5173).
+# 5. Open the URL shown in terminal (usually http://localhost:5173/)
 
-## Notes
+📂 Folder Structure
+internship-assignent/
+│── public/               # Static assets (favicon, images, etc.)
+│   └── screenshots/      # Project screenshots (for README)
+│── src/
+│   ├── components/       # Reusable UI components (TodoList, TodoInput, etc.)
+│   ├── features/         # Redux slices (todosSlice.js)
+│   ├── pages/            # Page-level components (HomePage, TodoPage, GithubPage)
+│   ├── store/            # Redux store configuration
+│   ├── styles/           # Global styles (index.css)
+│   ├── App.jsx           # Root component
+│   ├── main.jsx          # Entry point
+│── package.json          # Project dependencies and scripts
+│── vite.config.js        # Vite configuration
 
-- The To-Do app uses Redux Toolkit. Default tasks are preloaded and stored in localStorage.
-- GitHub API requests are unauthenticated and subject to GitHub rate limits. For heavy testing, consider adding a personal access token.
-- If you see an error about missing dependencies, run `npm install` again.
+📸 Screenshots
 
-Good luck with your internship submission — make sure to include a short README and a few screenshots in your GitHub repo!
-=======
-# internship-assignent
->>>>>>> 365e1cdf57755d53bf8f99de136a1c7fb9485a16
+### 🏠 Home Page
+![Home Page](public/screenshots/home-page.png)
+
+### ✅ Todo App
+![Todo App](public/screenshots/todo-page.png)
+
+### 👤 GitHub Profile Viewer
+![GitHub Profile Viewer](public/screenshots/github-page.png)
+
+
+
+✨ Features
+
+✅ Todo App – Add and remove tasks with state managed via Redux
+
+✅ GitHub Profile Viewer – Search and view GitHub users using API integration
+
+✅ Light/Dark Theme Toggle – Switch between light and dark themes
+
+✅ Responsive Design – Fully responsive layout styled with pure CSS
+
+📜 License
+
+This project is created solely for educational and internship purposes.
+It is not intended for commercial use.
+
+
+
