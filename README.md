@@ -66,11 +66,15 @@ internship-assignent/
 │── vite.config.js        # Vite configuration
 
 📸 Screenshots
-🏠 Home Page
 
-✅ Todo App
+### 🏠 Home Page
+![Home Page](public/screenshots/home-page.png)
 
-👤 GitHub Profile Viewer
+### ✅ Todo App
+![Todo App](public/screenshots/todo-page.png)
+
+### 👤 GitHub Profile Viewer
+![GitHub Profile Viewer](public/screenshots/github-page.png)
 
 
 
