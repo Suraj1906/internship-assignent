@@ -91,6 +91,21 @@ internship-assignent/
 
 ✅ Responsive Design – Fully responsive layout styled with pure CSS
 
+🔗 Live Demo
+
+🌍 [View Live](https://internship-pro.netlify.app/)
+
+
+📬 Contact
+
+Name: Suraj Bhardwaj
+
+GitHub: [Suraj1906](https://github.com/Suraj1906)
+
+
+LinkedIn: [Suraj Bhardwaj](https://www.linkedin.com/in/suraj-bhardwaj-620873217)
+
+
 📜 License
 
 This project is created solely for educational and internship purposes.
